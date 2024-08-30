@@ -39,7 +39,6 @@ public class TeacherServiceImpl implements ITeacherService {
             Teacher existingTeacher = optionalTeacher.get();
             existingTeacher.setName(teacher.getName());
             existingTeacher.setLastName(teacher.getLastName());
-            existingTeacher.setSubject(teacher.getSubject());
             return teacherRepository.save(existingTeacher);
         }
         return null;

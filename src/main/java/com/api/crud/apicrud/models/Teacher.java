@@ -15,8 +15,5 @@ public class Teacher {
 
     private String name;
     private String lastName;
-
-    @OneToOne(mappedBy = "teacher", cascade = CascadeType.ALL)
-    private Subject subject;
     
 }

@@ -17,8 +17,8 @@ public class Subject {
 
     private String name;
 
-    // cascade ayuda a que si se elimina un alumno, se eliminan sus materias
-    @OneToMany(mappedBy = "subject", cascade = CascadeType.ALL)
-    private List<Student> students;    
+    @OneToOne
+    @JoinColumn(name = "teacher_id")
+    private Teacher teacher;
     
 }
