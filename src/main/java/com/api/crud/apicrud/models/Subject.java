@@ -1,5 +1,7 @@
 package com.api.crud.apicrud.models;
 
+import java.util.List;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,12 +17,8 @@ public class Subject {
 
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Student student;
-
-    @OneToOne
-    @JoinColumn(name = "teacher_id")
-    private Teacher teacher;
+    // cascade ayuda a que si se elimina un alumno, se eliminan sus materias
+    @OneToMany(mappedBy = "subject", cascade = CascadeType.ALL)
+    private List<Student> students;    
     
 }

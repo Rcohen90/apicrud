@@ -18,7 +18,8 @@ public class Student {
     private String name;
     private String lastName;
 
-    // cascade ayuda a que si se elimina un alumno, se eliminan sus materias
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    private List<Subject> subjects;    
+    @ManyToOne
+    @JoinColumn(name = "subject_id")
+    private Subject subject;
+
 }
