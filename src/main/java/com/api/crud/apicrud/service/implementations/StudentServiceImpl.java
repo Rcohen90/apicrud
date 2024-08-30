@@ -39,7 +39,7 @@ public class StudentServiceImpl implements IStudentService {
             Student existingStudent = optionalStudent.get();
             existingStudent.setName(student.getName());
             existingStudent.setLastName(student.getLastName());
-            existingStudent.setSubjects(student.getSubjects());
+            existingStudent.setSubject(student.getSubject());
             return studentRepository.save(existingStudent);
         }
         return null;

@@ -6,11 +6,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.api.crud.apicrud.models.Subject;
 import com.api.crud.apicrud.repository.SubjectRepository;
 import com.api.crud.apicrud.service.interfaces.ISubjectService;
-
+@Service
 public class SubjectServiceImpl implements ISubjectService {
 
     @Autowired

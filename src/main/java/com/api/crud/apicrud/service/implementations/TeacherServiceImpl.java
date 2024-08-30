@@ -6,11 +6,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.api.crud.apicrud.models.Teacher;
 import com.api.crud.apicrud.repository.TeacherRepository;
 import com.api.crud.apicrud.service.interfaces.ITeacherService;
-
+@Service
 public class TeacherServiceImpl implements ITeacherService {
 
     @Autowired
