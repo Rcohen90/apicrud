@@ -1,7 +1,5 @@
 package com.api.crud.apicrud;
 
-import java.util.logging.Logger;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,7 +8,7 @@ public class ApicrudApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApicrudApplication.class, args);
-		Logger.getLogger("API CRUD iniciada.");
+		System.out.println("API CRUD iniciada.");
 	}
 
 }
