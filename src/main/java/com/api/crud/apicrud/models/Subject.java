@@ -1,7 +1,5 @@
 package com.api.crud.apicrud.models;
 
-import java.util.List;
-
 import jakarta.persistence.*;
 import lombok.*;
 
