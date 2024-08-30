@@ -17,10 +17,10 @@ public class Subject {
 
     @ManyToOne
     @JoinColumn(name = "student_id")
-    private Student studen;
+    private Student student;
 
-    @ManyToOne
-    @JoinColumn(name = "teacher_id")
+    @OneToOne
+    @JoinColumn(name = "profesor_id")
     private Teacher teacher;
     
 }
