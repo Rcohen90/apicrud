@@ -20,7 +20,7 @@ public class Subject {
     private Student student;
 
     @OneToOne
-    @JoinColumn(name = "profesor_id")
+    @JoinColumn(name = "teacher_id")
     private Teacher teacher;
     
 }
